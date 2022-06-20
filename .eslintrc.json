@@ -1,0 +1,28 @@
+{
+    "extends": ["standard"],
+    "plugins": [
+        "standard",
+        "promise",
+        "chai-friendly",
+        "@typescript-eslint"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "env": {
+         "node": true,
+         "mocha": true
+     },
+    "rules": {
+        "no-useless-constructor": "off",
+        "no-unused-vars":  "warn",
+        "eol-last": "off",
+        "space-before-function-paren": "off",
+        "indent": ["error", 4],
+        "quotes": ["error", "single", { "avoidEscape": true }],
+        "semi": ["error", "always",{ "omitLastInOneLineBlock": true}],
+        "one-var": ["off"],
+        "space-before-blocks": ["off"],
+        "camelcase": ["warn"],
+        "no-unused-expressions": 0,
+        "chai-friendly/no-unused-expressions": 2
+    }
+  }
